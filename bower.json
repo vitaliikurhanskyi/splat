@@ -1,5 +1,9 @@
 {
   "name": "splat",
   "version": "0.1.0",
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "1.12",
+    "normalize-css": "normalize.css#3.0.3",
+    "slick-carousel": "^1.5.9"
+  }
 }

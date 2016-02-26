@@ -17,7 +17,7 @@ body {
 	
 }
 
-.bg-container {
+.bg-container__header {
 	background: #e9edf0;
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f4f6f8', endColorstr='#e9edf0');
 	background: -webkit-linear-gradient(top, #f4f6f8 10%, #e9edf0 90%);
@@ -25,6 +25,7 @@ body {
 	background: -o-linear-gradient(top, #f4f6f8 10%, #e9edf0 90%);
 	background: -ms-linear-gradient(top, #f4f6f8 10%, #e9edf0 90%);
 	background: linear-gradient(top, #f4f6f8 10%, #e9edf0 90%);
+	border-bottom: 1px solid #e1e4e6;
 	header {
 		// border: 1px solid blue;
 		@include make-row();
