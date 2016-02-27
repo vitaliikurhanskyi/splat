@@ -1,5 +1,6 @@
 .bg-swiper__container {
 	background: #f0f3f5;
+	border-bottom: 1px solid #e1e4e6;
 
 	.swiper__container {
 		@include make-row();

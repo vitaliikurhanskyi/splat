@@ -1,0 +1,19 @@
+.slick-dots {
+    margin-top: -18px;
+    width: 100%;
+    text-align: center;
+    margin-left: -50px;
+    li {
+        display: inline-block;
+    }
+    button {
+        border: none;
+        width: 60px;
+        height: 5px;
+        outline: none;
+        background: #dddddd;
+    }
+    .slick-active button {
+        background: #d0003e;
+    }
+}

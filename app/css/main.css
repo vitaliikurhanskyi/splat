@@ -1599,6 +1599,7 @@ body {
 
 .bg-swiper__container {
   background: #f0f3f5;
+  border-bottom: 1px solid #e1e4e6;
 }
 .bg-swiper__container .swiper__container {
   margin-left: -15px;
