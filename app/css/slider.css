@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .wrapper_container {
   width: 960px;
-  margin: 20px auto;
+  margin: 35px auto;
 }
 
 .wrapper_container .nav__container {
@@ -17,12 +17,14 @@
   outline: none;
   margin-bottom: 10px;
   text-transform: uppercase;
-  font-size: 21px;
+  font-size: 11px;
+  color: #d0003e;
 }
 
 .wrapper_container .nav__item h1 {
   text-align: center;
-  padding: 0 15px;
+  padding: 5px 15px;
+  font-weight: 300;
 }
 
 .wrapper_container .slick-current {
@@ -43,4 +45,28 @@
   /* ╨Я╤А╨╛╨╖╤А╨░╤З╨╜╤Л╨╡ ╨│╤А╨░╨╜╨╕╤Ж╤Л */
   border-top: 10px solid #c60032;
   /* ╨Ф╨╛╨▒╨░╨▓╨╗╤П╨╡╨╝ ╤В╤А╨╡╤Г╨│╨╛╨╗╤М╨╜╨╕╨║ */
+}
+
+.wrapper_container .slider__container {
+  position: relative;
+}
+
+.wrapper_container .slick-arrow {
+  width: 90px;
+  height: 100px;
+  border: none;
+  top: 27%;
+  outline: none;
+}
+
+.wrapper_container .slider__container .slick-next {
+  position: absolute;
+  right: -90px;
+  background: #fff url("../images/right_arrow.png") 50% 50% no-repeat;
+}
+
+.wrapper_container .slider__container .slick-prev {
+  position: absolute;
+  left: -90px;
+  background: #fff url("../images/left_arrow.png") 50% 50% no-repeat;
 }

@@ -1,13 +1,14 @@
 $(document).ready(function() {
 
   $('.slider-nav').slick({
-    slidesToShow: 3,
+    slidesToShow: 2,
     slidesToScroll: 1,
-    arrows: false,
+    arrows: true,
+    appendArrows: $('.slider__container'),
     asNavFor: '.slider-for',
     focusOnSelect: true,
     centerMode: true,
-    centerPadding: '180px',
+    centerPadding: '100px',
     infinite: true,
     variableWidth: true
   });
@@ -22,5 +23,7 @@ $(document).ready(function() {
     fade: true,
     infinite: true
   });
+
+  $('.slick-next').add('.slick-prev').html('');
 
 });
