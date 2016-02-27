@@ -10,7 +10,8 @@ var gulp = require('gulp'),
 	imagemin = require('gulp-imagemin'),
 	pngquant = require('imagemin-pngquant'),
 	autoprefixer = require('gulp-autoprefixer'),
-	uncss = require('gulp-uncss');
+	uncss = require('gulp-uncss'),
+	concatCss = require('gulp-concat-css');
 
 /* wiredep */
 
@@ -39,12 +40,24 @@ gulp.task('build', ['clean'], function () {
 			browsers: ['last 30 versions'],
 			cascade: false
 		})))
-        .pipe(gulpif('*.css', uncss({
-            html: ['./app/index.html']
+        .pipe(gulpif('', uncss({
+        	csspath: ['app/css/*.css'],
+            ignoreSheets: ['app/css/test.css']
         })))
         .pipe(gulpif('*.css', minifyCss()))
         .pipe(gulp.dest('dist'));
 });
+
+// gulp.task('css', function () {
+// 	return gulp.src('app/css/nouncss/*.css')
+// 	.pipe(concatCss("slick.css"))
+// 	.pipe(gulpif('*.css', autoprefixer({
+// 			browsers: ['last 30 versions'],
+// 			cascade: false
+// 		})))
+// 	.pipe(gulpif('*.css', minifyCss()))
+// 	.pipe(gulp.dest('dist/css/'));
+// });
 
 /* end build */
 

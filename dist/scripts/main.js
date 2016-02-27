@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".swiper").slick({dots:!0,infinite:!1,slidesToShow:4,slidesToScroll:4,arrows:!1,focusOnSelect:!0}),$(".slick-dots").find("button").html("")});

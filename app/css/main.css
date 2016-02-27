@@ -1597,24 +1597,6 @@ body {
   background: url(../images/search.png) no-repeat center center;
 }
 
-.slick-dots {
-  margin-top: -10px;
-  margin-left: 30%;
-  margin-right: 30%;
-}
-.slick-dots li {
-  display: inline-block;
-}
-.slick-dots button {
-  border: none;
-  width: 70px;
-  height: 7px;
-  outline: none;
-}
-.slick-dots .slick-active button {
-  background: #d0003e;
-}
-
 .bg-swiper__container {
   background: #f0f3f5;
 }
@@ -1623,6 +1605,7 @@ body {
   margin-right: -15px;
   width: 960px;
   margin: 0 auto;
+  padding-bottom: 20px;
 }
 .bg-swiper__container .swiper__container:before, .bg-swiper__container .swiper__container:after {
   content: " ";
