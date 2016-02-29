@@ -1,5 +1,5 @@
 .wrapper_container {
-	width: 960px;
+	width: 940px;
 	margin: 35px auto;
 }
 
@@ -17,7 +17,6 @@
 	margin-bottom: 10px;
 	text-transform: uppercase;
 	font-size: 11px;
-
 	color: #d0003e;
 }
 
@@ -27,14 +26,30 @@
 	font-weight: 300;
 }
 
-.wrapper_container .slick-current {
+.wrapper_container .slider-for {
+	cursor: pointer;
+}
+
+.wrapper_container .slider-for img {
+	width: 100%;
+	max-height: 400px;
+}
+
+.wrapper_container .slider-for .slick-current {
+	width: 100%;
+	max-height: 400px;
+	cursor: pointer;
+	outline: none;
+}
+
+.wrapper_container .slider-nav .slick-current {
 	background-image: -moz-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
 	background-image: -webkit-linear-gradient( 90deg, #d6004f 0%, #c60032 100%);
 	background-image: -ms-linear-gradient( 90deg, rgb(0,0,0) 0%, rgb(255,255,255) 100%);
 	color: white;
 }
 
-.wrapper_container .slick-current:after {
+.wrapper_container .slider-nav .slick-current:after {
 	content: ''; 
 	position: absolute; /* Абсолютное позиционирование */
     left: 45%; bottom: -20px; /* Положение треугольника */
@@ -66,6 +81,3 @@
 	background: #fff url('../images/left_arrow.png') 50% 50% no-repeat;
 }
 
-// .wrapper_container .slick-next {
-// 	background-image: url('../images/right_arrow.png');
-// }
